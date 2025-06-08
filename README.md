@@ -20,7 +20,7 @@ docker-compose up
 ## Миграции
 
 ```
-docker exec -it django-web-1 sh
+docker exec -it weather-weather-1 sh
 ```
 
 стартовые уже есть(опционально):

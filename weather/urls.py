@@ -1,10 +1,8 @@
 from django.urls import path
-from . import views
+from .views import CurrentWeatherView, ForecastView, ForecastOverrideView
 
 urlpatterns = [
-    path("weather/current", views.get_current_weather),
-    path("weather/forecast", views.get_forecast),
-    path(
-        "weather/override_forecast", views.override_forecast, name="override_forecast"
-    ),
+    path("weather/current", CurrentWeatherView.as_view()),
+    path("weather/forecast", ForecastView.as_view()),
+    path("weather/override_forecast", ForecastOverrideView.as_view()),
 ]

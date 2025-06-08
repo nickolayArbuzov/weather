@@ -4,7 +4,10 @@ from datetime import datetime, timedelta
 
 class ForecastOverrideSerializer(serializers.Serializer):
     city = serializers.CharField()
-    date = serializers.DateField(input_formats=["%d.%m.%Y"])
+    date = serializers.DateField(
+        input_formats=["%d.%m.%Y"],
+        format="%d.%m.%Y",
+    )
     min_temperature = serializers.FloatField()
     max_temperature = serializers.FloatField()
 
