@@ -8,7 +8,7 @@ import requests
 from decouple import config
 
 API_KEY = config("WEATHER_API_KEY")
-BASE_URL = "http://api.weatherapi.com/v1"
+BASE_URL = "https://api.weatherapi.com/v1"
 
 
 @api_view(["GET"])

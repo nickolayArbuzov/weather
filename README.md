@@ -9,7 +9,7 @@
 
 - `GET /api/weather/current?city=CityName`
 - `GET /api/weather/forecast?city=CityName&date=dd.MM.yyyy`
-- `POST /api/weather/forecast`
+- `POST /api/weather/override_forecast`
 
 ## Запуск
 

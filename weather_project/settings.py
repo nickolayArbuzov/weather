@@ -29,8 +29,8 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-ROOT_URLCONF = "weather.urls"
-WSGI_APPLICATION = "weather.wsgi.application"
+ROOT_URLCONF = "weather_project.urls"
+WSGI_APPLICATION = "weather_project.wsgi.application"
 
 DATABASES = {
     "default": {
